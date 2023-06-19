@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="195dp"
+        android:background="#000"
+        app:srcCompat="@drawable/camara"/>
+
+    <Button
+        android:id="@+id/select"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-155dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#BBE1E2"
+        android:text="Subir"
+        app:icon="@android:drawable/ic_menu_gallery" />
+
+
+    <Button
+        android:id="@+id/camera"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select"
+        android:layout_marginStart="-155dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#BBE1E2"
+        android:text="Foto"
+        app:icon="@android:drawable/ic_menu_camera" />
+    <Button
+        android:id="@+id/Original"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera"
+        android:layout_alignStart="@+id/camera"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#BBE1E2"
+        android:text="Original"
+        android:onClick="restaurarImagenOriginal"
+        app:icon="@android:drawable/ic_menu_revert" />
+
+    <Button
+        android:id="@+id/btnGris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnContornos"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/btnColor1"
+        android:onClick="escalaDeGrises"
+        android:text="Grises"
+        android:backgroundTint="#808080"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnCanalRojo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ff0000"
+        android:onClick="canalRojo"
+        android:text="Canal1" />
+
+    <Button
+        android:id="@+id/btnCanalVerde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCanalRojo"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00ff00"
+        android:onClick="canalVerde"
+        android:text="Canal2" />
+
+    <Button
+        android:id="@+id/btnCanalAzul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCanalVerde"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0000ff"
+        android:onClick="canalAzul"
+        android:text="Canal3" />
+
+    <Button
+        android:id="@+id/btnBinaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="-114dp"
+        android:layout_marginTop="160dp"
+        android:layout_toEndOf="@+id/btnContornos"
+        android:backgroundTint="#000000"
+        android:onClick="convertirABinaria"
+        android:text="Binaria"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/btnColor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginStart="-255dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#Ffff00"
+        android:onClick="coloresAmarillo"
+        android:text="color1" />
+
+    <Button
+        android:id="@+id/btnColor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnColor1"
+        android:layout_marginStart="-255dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#00ffff"
+        android:onClick="coloresCyan"
+        android:text="color2" />
+
+    <Button
+        android:id="@+id/btnColor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnColor2"
+        android:layout_marginStart="-255dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#ffffff"
+        android:textColor="#000000"
+        android:onClick="coloresBlanco"
+        android:text="color3" />
+
+    <Button
+        android:id="@+id/btnContornos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCanalAzul"
+        android:layout_alignStart="@+id/btnCanalAzul"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="-183dp"
+        android:onClick="detectarContornos"
+        android:text="Contorno"
+        android:textColor="#1FE63A"
+        android:backgroundTint="#000000"/>
+
+    <TextView
+        android:id="@+id/txtFuncion"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="466dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="FUNCION ADICIONAL"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRotar"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="63dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/txtFuncion"
+        android:layout_alignStart="@+id/txtFuncion"
+        android:layout_alignEnd="@+id/txtFuncion"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="142dp"
+        android:onClick="edicionRotar"
+        app:icon="@android:drawable/ic_menu_rotate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toEndOf="@+id/txtFuncion"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443"
+        android:backgroundTint="#BBE1E2"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

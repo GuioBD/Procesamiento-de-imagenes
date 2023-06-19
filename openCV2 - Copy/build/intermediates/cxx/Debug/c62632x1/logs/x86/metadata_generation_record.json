@@ -1,0 +1,44 @@
+[
+  {
+    "level_": 0,
+    "message_": "Start JSON generation. Platform version: 24 min SDK version: x86",
+    "file_": "C:\\Users\\guiom\\AndroidStudioProjects\\PF_IA\\openCV2\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": 1504462247
+  },
+  {
+    "level_": 0,
+    "message_": "JSON \u0027C:\\Users\\guiom\\AndroidStudioProjects\\PF_IA\\openCV2\\.cxx\\Debug\\c62632x1\\x86\\android_gradle_build.json\u0027 was up-to-date",
+    "file_": "C:\\Users\\guiom\\AndroidStudioProjects\\PF_IA\\openCV2\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -1482488583
+  },
+  {
+    "level_": 0,
+    "message_": "JSON generation completed without problems",
+    "file_": "C:\\Users\\guiom\\AndroidStudioProjects\\PF_IA\\openCV2\\libcxx_helper\\CMakeLists.txt",
+    "tag_": "debug|x86",
+    "diagnosticCode_": 0,
+    "memoizedIsInitialized": 1,
+    "unknownFields": {
+      "fields": {},
+      "fieldsDescending": {}
+    },
+    "memoizedSize": -1,
+    "memoizedHashCode": -375862477
+  }
+]
